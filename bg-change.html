@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        #title_div{
+            font-size: 30px;
+            height: 150px;
+            width: 100vw;
+            background-color:rgb(25, 96, 120) ;
+            color: whitesmoke;
+            display: inline-flex;
+            align-content: center;
+            justify-content: center;
+        }
+        .btn{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+         background-color: darkseagreen;
+         
+        }
+       
+        #image{
+            position: absolute;
+            top: 250px;
+            left: 600px;
+
+        }
+        #white{
+            background-color: white;
+            position: absolute;
+            top: 200px;
+            left: 50px;
+            
+        }
+        #black{
+            background-color: rosybrown;
+            position: absolute;
+            top: 200px;
+            left: 100px;
+           
+        }
+        #aqua{
+            background-color: #2F4F4F;
+            position: absolute;
+            top: 200px;
+            left: 150px;
+           
+
+        }
+        #green{
+            background-color:#26734d;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+           
+        }
+    </style>
+</head>
+<body>
+    <button class="btn" id="white" onclick="changebg('white')"></button>
+    <button class="btn" id="black" onclick="changebg('rosybrown')"></button>
+    <button class="btn" id="aqua" onclick="changebg('DarkSlateGray')"></button>
+    <button class="btn" id="green" onclick="changebg('#26734d')"></button>
+    <center>
+    <div id="title_div">
+
+        <h1 id="title">Background Changer</h1>
+    </div>
+    <div id="container">
+        <img id="image"  src="https://s.tcdn.co/63b/406/63b40630-29b1-4bca-98f6-7fb816e91301/17.png" alt="image not found">
+    </div>
+</center>
+<script src="/bg-change.js">
+   
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #2c3e50;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+        .value{
+          
+            font-size: 150px;
+            font-weight: bold;
+            color: rgba(245, 245, 245, 0.689);
+          margin: 10px;
+        }
+        .text{
+          
+            font-size: 40px;
+            font-weight: bold;
+            color: rgba(245, 245, 245, 0.689);
+          margin: 10px;
+        }
+        .btn{
+          
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+         
+        }
+        #start{
+            position: absolute;
+          top: 350px;
+          left: 700px;
+          background-color: rgb(9, 176, 176);
+        }
+        #stop{
+            position: absolute;
+          top: 350px;
+          left: 800px;
+          background-color: rgb(227, 126, 227);
+        }
+        #reset{
+            position: absolute;
+          top: 350px;
+          left: 900px;
+          background-color: rgb(56, 195, 137);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <span class="value" id="hrv">00</span>
+        <span class="text" id="hr">Hr</span> 
+        <span class="value" id="minv">00</span>
+        <span class="text" id="min">Min</span>
+        <span class="value" id="secv">00</span>
+        <span class="text" id="sec">Sec</span>
+       <span class="value" id="countv">00</span>
+    </div>
+    <div id="btn_cont">
+        <button class="btn" id="start" onclick="start()">Start</button>
+        <button class="btn" id="stop" onclick="stop()">Stop</button>
+        <button class="btn" id="reset" onclick="reset()">Reset</button>
+    
+
+    </div>
+
+    <script src="/stop-watch.js">
+      
+    </script>
+</body>
+</html>

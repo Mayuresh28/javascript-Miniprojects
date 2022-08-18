@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        /* .slider_box{
+            display: none;
+        } */
+        .img{
+            height: 400px;
+            margin: 30px;
+        }
+        .slider_caption{
+            font-size: 30px;
+        }
+        #prev{
+            font-size: 40px;
+            position:absolute;
+            top: 300px;
+            left: 100px;
+            
+        }
+      
+        #next{
+            font-size: 40px;
+            position:absolute;
+            top: 300px;
+            right: 100px;
+        }
+    </style>
+</head>
+<body> 
+    <center>
+    <div class="slider_box" id="div1">
+        <img src="https://www.pinclipart.com/picdir/big/111-1115738_i-am-loki-of-asgard-by-mibu-no.png" alt="image not found" class="img">
+        <div class="slider_caption">Caption 1</div>
+    </div>
+    
+    <div class="slider_box" id="div2">
+        <img src="    http://getdrawings.com/cliparts/marvel-superhero-clipart-25.png" alt="image not found" class="img">
+        <div class="slider_caption">Caption 2</div>
+    </div>
+    <div class="slider_box" id="div3">
+        <img src="http://cliparts.co/cliparts/rTj/KG9/rTjKG97Ac.png" alt="img not found" class="img">
+        <div class="slider_caption" >Caption 3</div>
+    </div>
+    <div class="slider_box" id="div4">
+        <img src="https://www.pinclipart.com/picdir/big/546-5463431_loki-god-godofmischief-marvel-hero-asgard-mcu-cute.png" alt="img not found"  class="img">
+        <div class="slider_caption">Caption 4</div>
+    </div>
+<div class="arrow" id="prev" onclick="update(-1)">&#129120;</div>
+<div class="arrow" id="next"  onclick="update(1)">	&#129122;</div>
+</center>	
+<script src="/image-slider.js">
+
+    // let flag = 2;
+    // // function update(x){
+    // //     flag = flag + x;
+    // // }
+    
+    // slideshow(flag);
+    
+    
+    // function slideshow(num){
+    //    let slides = document.getElementsByClassName("slider_box");
+
+    // //  for(let y of slides){
+    // //      y.style.display ="none";
+    // //  }
+
+    //  slides[num].styles.display = "block"
+     
+     
+    // }
+    
+    // // console.log(arr.length)
+    
+
+
+   
+</script>
+</body>
+</html>

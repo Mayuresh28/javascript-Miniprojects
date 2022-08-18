@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        h1{
+            font-size: 45px;
+        }
+    #container{
+        margin: 100px;
+        background-color: rgb(37, 149, 145);
+        height: 50vh;
+        width: 70vw;
+        
+    }
+    .input-class{
+        width: 500px;
+    }
+    .inp{
+   height: 70px;
+   width: 300px;
+   margin: 40px;
+   border: 3px solid black;
+   display: inline-block;
+  font-size: 35px;
+  position: center;
+   
+    }
+    #cel{
+        position: absolute;
+        top: 250px;
+        left: 680px;
+    }
+    #fah{
+        position: absolute;
+        top: 380px;
+        left: 680px;
+    }
+
+    .label{
+        font-size: 40px;
+        display: inline-block;
+    }
+    #l1{
+        position: absolute;
+        top: 300px;
+        left: 550px;
+    }
+    #l2{
+        position: absolute;
+        top: 430px;
+        left: 520px;
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Temperature Converter</h1>
+    <div id="container">
+        <div class="input-class" id="input1">
+            <label for="cel" class="label" id="l1">Celcius</label>
+            <input type="number"  id="cel" class="inp">
+        </div>
+        <div class="input-class" id="input2"></div>
+        <label for="fah" class="label" id="l2">Faranheit</label>
+        <input type="number"  id="fah" class="inp">
+
+    </div>
+    <script src="/temp-converter.js">
+      
+    </script>
+</center>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            margin: 40px;
+        }
+        #container{
+            font-size: 30px;
+          
+        }
+        input{
+            margin: 20px;
+            font-size: 30px;
+        }
+        button{
+            font-size: 28px;
+           
+        }
+        .error{
+            color: red;
+            font-size: 25px;
+        }
+        #submit{
+            background-color: aliceblue;
+            font-size: 25px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return validate()">
+        <div id="container">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="" id="error1" class="error"></label><br>
+        <label for="lname">Password:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="" id="error2" class="error"></label><br>
+        <input type="submit"  id="submit"><br>
+      </form>
+    </div>
+    <script src="/form-validation.js">
+      
+    </script>
+</body>
+</html>
